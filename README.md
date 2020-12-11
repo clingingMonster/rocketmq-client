@@ -8,26 +8,16 @@
 
 This project aims to help developers quickly integrate [RocketMQ](http://rocketmq.apache.org/) with [Spring Boot](http://projects.spring.io/spring-boot/). 
 
-## Features
+## 特性
+和官方apache rocketMq-client 使用方法一样
+我还特意添加了两个事务mq的方法,当适用事务消息时可以监听本地事务，
+在提交事务消息，减少一个和mq交互次数（当然不喜欢可以去掉）
 
-- [x] Send messages synchronously
-- [x] Send messages asynchronously
-- [x] Send messages in one-way mode
-- [x] Send ordered messages
-- [x] Send batched messages
-- [x] Send transactional messages
-- [x] Send scheduled messages with delay level
-- [x] Consume messages with concurrently mode (broadcasting/clustering)
-- [x] Consume ordered messages
-- [x] Filter messages using the tag or sql92 expression
-- [x] Support message tracing
-- [x] Support authentication and authorization
-- [x] Support request-reply message exchange pattern
 
-## Prerequisites
-- JDK 1.8 and above
-- [Maven](http://maven.apache.org/) 3.0 and above
-- Spring Boot 1.5 and above
+
+## 版本要求
+- JDK 1.8 以上
+- Spring Boot 1.5 以上
 
 ## Usage
 
@@ -51,9 +41,4 @@ Please see the [rocketmq-spring-boot-samples](rocketmq-spring-boot-samples).
 Please see the [wiki](https://github.com/apache/rocketmq-spring/wiki) page.
 
 
-## Contributing
 
-We are always very happy to have contributions, whether for trivial cleanups or big new features. Please see the RocketMQ main website to read [details](http://rocketmq.apache.org/docs/how-to-contribute/).
-
-## License
-[Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html) Copyright (C) Apache Software Foundation 
